@@ -24,9 +24,9 @@ services:
     
     environment:
       # canal dds de comunicación
-      ROS_DOMAIN_ID: 0
+      ROS_DOMAIN_ID: 2
       # forzamos conexión con una ip
-      ROS_STATIC_PEERS: 192.168.68.60
+      ROS_STATIC_PEERS: 192.168.6.85
       # acceso al display
       DISPLAY: ${DISPLAY}
       QT_X11_NO_MITSHM: 1
