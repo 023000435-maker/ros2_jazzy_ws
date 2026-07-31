@@ -34,6 +34,9 @@ RUN apt update && apt install -y \
     ffmpeg \
     && rm -rf /var/lib/apt/lists/*
 
+# Reconocimiento de texto para placas
+RUN pip3 install easyocr --break-system-packages --ignore-installed numpy
+
 # Inicialización de rosdep
 RUN rosdep init || true
 RUN rosdep update
